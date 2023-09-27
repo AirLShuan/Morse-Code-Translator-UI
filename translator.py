@@ -1,7 +1,7 @@
 import sys
 from PySide2 import QtWidgets
 from ui_translator import Ui_MorseCode
-
+#
 class MainWindow(QtWidgets.QMainWindow):
     
     morse_dict = {
