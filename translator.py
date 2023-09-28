@@ -1,7 +1,6 @@
 import sys
 from PySide2 import QtWidgets
-from ui_translator import Ui_MorseCode
-#
+from gen.ui_translator import Ui_MorseCode
 class MainWindow(QtWidgets.QMainWindow):
     
     morse_dict = {
@@ -52,6 +51,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui.output.setText(self.translate(self.ui.output.text()))
     def backspace_press(self):
         self.ui.output.setText(self.ui.output.text().rstrip(self.ui.output.text()[-1]))
+    
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
 
