@@ -1,6 +1,6 @@
 # Morse-Code-Translator-UI
 
-I chose to do this, because  there's been times where some video games have morse code as a puzzle.
+I chose to do this, because  there's been times where some video games have morse code as a puzzle. And thought it would be a fun way to learn morse code.
 
 Requirements:
     - Visual Studio Code
