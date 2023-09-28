@@ -27,7 +27,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui.pushButton_space.pressed.connect(lambda: self.space_press())
         self.ui.pushButton_enter.pressed.connect(lambda: self.enter_press())
         self.ui.pushButton_backspace.pressed.connect(lambda: self.backspace_press())
-        self.ui.pushButton_clear.pressed.connect(lambda: self.clear())
+        self.ui.pushButton_clear.pressed.connect(lambda: self.clear_press())
 
     ''' User Actions Methods '''    
 
@@ -42,25 +42,16 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def clear_press(self):
         self.ui.output.setText("")
-
     def dot_press(self):
-        dot = '.'
-        self.ui.output.setText(f'{self.ui.output.text()} {dot}')
-
+        self.ui.output.setText(f'{self.ui.output.text()}.')
     def dash_press(self):
-        dash = '-'
-        self.ui.output.setText(f'{self.ui.output.text()} {dash}')
-
+        self.ui.output.setText(f'{self.ui.output.text()}-')
     def space_press(self):
-        space = ' '
-        self.ui.output.setText(f'{self.ui.output.text()} {space}')
-
+        self.ui.output.setText(f'{self.ui.output.text()} ')
     def enter_press(self):
         self.ui.output.setText(self.translate(self.ui.output.text()))
-
     def backspace_press(self):
         self.ui.output.setText(self.ui.output.text().rstrip(self.ui.output.text()[-1]))
-
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
 
