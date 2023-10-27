@@ -4,7 +4,7 @@ I chose to do this, because  there's been times where some video games have mors
 
 Requirements:
     - Visual Studio Code
-    - Python 3.10
+    - Python 3.10.11
     - Venv (virtual enviornment)
 Instructions:
     - Download the files (can use clone Git)
